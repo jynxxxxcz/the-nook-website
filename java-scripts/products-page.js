@@ -532,33 +532,8 @@
 
 // FAVORITES AND RATINGS: sync product hearts and review scores.
 {
-    // GitHub Pages is case-sensitive, so list the spellings the file might have in the repo.
-    const LIKED_IMGS = ["images/like.png", "images/Like.png"];
-    const NOT_LIKED_IMGS = ["images/notLike.png", "images/notlike.png", "images/notLIke.png", "images/NotLike.png"];
-    const LIKED_IMG = LIKED_IMGS[0];
-    const NOT_LIKED_IMG = NOT_LIKED_IMGS[0];
-
-    // Set a heart image and fall back to the next spelling if the file is not found.
-    const setHeartImage = (icon, names) => {
-        if (icon.getAttribute("data-names") === names.join("|") && icon.getAttribute("data-ok") === "1") {
-            return;
-        }
-
-        let tried = 0;
-        icon.setAttribute("data-names", names.join("|"));
-        icon.setAttribute("data-ok", "0");
-
-        icon.onload = () => {
-            icon.setAttribute("data-ok", "1");
-        };
-        icon.onerror = () => {
-            tried += 1;
-            if (tried < names.length) {
-                icon.setAttribute("src", names[tried]);
-            }
-        };
-        icon.setAttribute("src", names[0]);
-    };
+    const LIKED_IMG = "images/like.png";
+    const NOT_LIKED_IMG = "images/notLIke.png";
 
     // Find or create a product's favorite button.
     const getHeart = box => {
@@ -566,8 +541,8 @@
 
         if (heart === null) {
             const icon = document.createElement("img");
+            icon.setAttribute("src", NOT_LIKED_IMG);
             icon.classList.add("heart-icon");
-            setHeartImage(icon, NOT_LIKED_IMGS);
 
             heart = document.createElement("div");
             heart.classList.add("heart");
@@ -652,11 +627,11 @@
             const icon = heart.querySelector(".heart-icon");
 
             if (liked) {
-                setHeartImage(icon, LIKED_IMGS);
+                icon.setAttribute("src", LIKED_IMG);
                 heart.setAttribute("aria-label", "Remove from favorites");
                 heart.setAttribute("aria-pressed", "true");
             } else {
-                setHeartImage(icon, NOT_LIKED_IMGS);
+                icon.setAttribute("src", NOT_LIKED_IMG);
                 heart.setAttribute("aria-label", "Add to favorites");
                 heart.setAttribute("aria-pressed", "false");
             }
