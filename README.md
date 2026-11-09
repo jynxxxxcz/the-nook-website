@@ -1,0 +1,2 @@
+# the-nook
+The Nook is a café website that provides a convenient platform for students to explore the café's menu, place orders, and catch up on announcements and promotions without ever setting foot in the café— all from the comfort of their own home or device. It offers four main services: browsing the menu, online ordering, announcements, and business information. Customers can explore snacks, food and beverages view product images and prices, and check the café's details, and operating hours.
