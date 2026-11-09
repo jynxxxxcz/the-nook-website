@@ -1,0 +1,3024 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Our Products</title>
+         <link rel="icon" type="image/png" href="images/theNook.png">
+        <link rel="stylesheet" type="text/css" href="css/products-page-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+     <body id="page-top">
+        <!--HEADER-->
+        <div class="top-bar">
+            <a href="home-page.html">
+                <img src="images/HomeWhite.png" class="home-icon">
+            </a>
+
+            <a href="#page-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+                <img src="images/NookWhite.png" class="nook-logo">
+            </a>
+
+            <a href="cart-page.html">
+                <div class="header-icon">
+                    <img src="images/cartWhite.png" class="cart-icon">
+                    <span class="cart-count"></span>
+                </div>
+            </a>
+        </div>
+
+        <!--CATEGORY SELECTION-->
+        <div class="category-tabs">
+            <a href="#snacks">Snacks</a>
+            <a href="#chickens">Chickens</a>
+            <a href="#foods">Food</a>
+            <a href="#drinks">Drinks</a>
+        </div>
+
+        <!--SNACKS PANEL-->
+        <div id="snacks" class="category-panel">
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="sandwiches-title" id="sandwiches">Sandwiches</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#grilled-cheese-sandwich-modal">
+                        <div class="product-card sandwiches-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/grilledCheese.png">
+
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+
+                            <p class="product-name">
+                                Grilled Cheese
+                            </p>
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="grilled-cheese-sandwich-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#snacks" class="modal-close">&times;</a>
+                            <img src="prodImgs/grilledCheese.png" class="modal-image">
+                            <h3>Grilled Cheese Sandwich</h3>
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Golden, crispy toasted bread filled with warm, gooey melted cheese for a rich and comforting bite. 
+                                A simple classic sandwich with buttery flavor and satisfying crunch in every bite.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list"> 
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#spam-and-egg-sandwich-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/eggNDspam.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Spam and Egg
+                            </p>
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+
+                    </a>
+
+                    <div id="spam-and-egg-sandwich-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#snacks" class="modal-close">&times;</a>
+                            <img src="prodImgs/eggNDspam.png" class="modal-image">
+
+                            <h3>Spam and Egg Sandwich</h3>
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Golden, crispy toasted bread filled with savory Spam, fluffy scrambled egg, and melted cheese. 
+                                A hearty sandwich with rich, buttery flavors and a satisfying combination in every bite.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#ham-and-cheese-sandwich-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/hamNDcheese.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Ham and Cheese
+                            </p>
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <div id="ham-and-cheese-sandwich-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#snacks" class="modal-close">&times;</a>
+                            <img src="prodImgs/hamNDcheese.png" class="modal-image">
+
+                            <h3>Ham and Cheese Sandwich</h3>
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Golden, crispy toasted bread filled with savory sliced ham and melted cheese for a rich and creamy bite. 
+                                A simple and satisfying sandwich with delicious buttery flavor and crunch.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Marisa</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Reimu</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Remilia</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="appetizers-title" id="appetizers">Appetizers</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#regular-fries-modal">
+                        <div class="product-card appetizers-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/rf.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Regular Fries
+                            </p>
+                            <p class="product-price">
+                                ₱79.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="regular-fries-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#snacks" class="modal-close">&times;</a>
+                            <img src="prodImgs/rf.png" class="modal-image">
+
+                            <h3>Regular Fries</h3>
+                            <p class="modal-price">
+                                ₱79.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy crispy golden fries with a lightly crunchy exterior and soft, fluffy center. 
+                                A simple and savory side that is satisfying on its own or paired with your favorite meal.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#cheesy-bacon-fries-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/cbf.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name" style="font-size: 15px;">
+                                Cheesey Bacon Fries
+                            </p>
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="cheesy-bacon-fries-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#snacks" class="modal-close">&times;</a>
+                            <img src="prodImgs/cbf.png" class="modal-image">
+
+                            <h3>Cheesy Bacon Fries</h3>
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy crispy golden fries topped with creamy melted cheese and savory bacon bits for a rich and indulgent snack. 
+                                A flavorful combination of cheesy goodness and smoky, salty crunch.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#chick-n-fries-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/cNf.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Chick N' Fries
+                            </p>
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="chick-n-fries-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#snacks" class="modal-close">&times;</a>
+                            <img src="prodImgs/cNf.png" class="modal-image">
+
+                            <h3>Chick N' Fries</h3>
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy crispy golden fries topped with crunchy fried chicken bites and creamy cheese sauce. 
+                                A hearty snack combining savory chicken, rich cheesy goodness, and satisfying crunch in every bite.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#nachos-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/nach.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Nachos
+                            </p>
+                            <p class="product-price">
+                                ₱169.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="nachos-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#snacks" class="modal-close">&times;</a>
+                            <img src="prodImgs/nach.png" class="modal-image">
+                            <h3>Nachos</h3>
+
+                            <p class="modal-price">
+                                ₱169.00
+                            </p>
+                            <p class="modal-description">
+                                Enjoy crunchy tortilla chips layered with savory seasoned beef, melted cheese, fresh tomatoes, and sliced jalapeños. 
+                                A flavorful snack combining cheesy richness, savory toppings, and a spicy kick.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--CHICKENS PANEL-->
+        <div id="chickens" class="category-panel">
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="chickens-title" id="chicken-meals">Chickens</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#chicken-3-pieces-with-rice-modal">
+                        <div class="product-card chickens-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/3pcswRice.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                3 Pieces with Rice
+                            </p>
+                            <p class="product-price">
+                                ₱119.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="chicken-3-pieces-with-rice-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#chickens" class="modal-close">&times;</a>
+                            <img src="prodImgs/3pcswRice.png" class="modal-image">
+
+                            <h3>Chicken: 3 Pieces with Rice</h3>
+                            <p class="modal-price">
+                                ₱119.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy 3 pieces of crispy Korean-style chicken served with warm rice and your choice of flavor. 
+                                A satisfying and affordable meal that brings together crunchy chicken and delicious taste.
+                            </p>
+
+                            <div class="flavor-selection" data-pick="1" data-name="flavor">
+                                <p class="modal-option-title">Select Flavor</p>
+                                <div class="flavor-list">
+                                    <button type="button" class="flavor-option">Original</button>
+                                    <button type="button" class="flavor-option">Yangnyeom</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Extra Spicy</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Super Spicy</button>
+                                    <button type="button" class="flavor-option">Bulgogi</button>
+                                    <button type="button" class="flavor-option">Snow Cheese</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#chicken-7-pieces-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/7pcs.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                                <p class="product-name">
+                                    7 Pieces
+                                </p>
+                                <p class="product-price">
+                                    ₱239.00
+                                </p>
+                        </div>
+                    </a>
+                        
+                    <div id="chicken-7-pieces-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#chickens" class="modal-close">&times;</a>
+                            <img src="prodImgs/7pcs.png" class="modal-image">
+
+                            <h3>Chicken: 7 Pieces</h3>
+                            <p class="modal-price">
+                                ₱239.00
+                            </p>
+                            <p class="modal-description">
+                                Seven pieces of crispy Korean-style chicken, perfect for sharing or enjoying as a hearty meal. 
+                                Choose your favorite flavor and satisfy your cravings with every crunchy and flavorful bite.
+                            </p>
+
+                            <div class="flavor-selection" data-pick="1" data-name="flavor">
+                                <p class="modal-option-title">Select Flavor</p>
+                                <div class="flavor-list">
+                                    <button type="button" class="flavor-option">Original</button>
+                                    <button type="button" class="flavor-option">Yangnyeom</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Extra Spicy</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Super Spicy</button>
+                                    <button type="button" class="flavor-option">Bulgogi</button>
+                                    <button type="button" class="flavor-option">Snow Cheese</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#chicken-14-pieces-2-flavors-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/14pcs.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                14 Pieces (2 Flavors)
+                            </p>
+                            <p class="product-price">
+                                ₱459.00
+                            </p>
+                        </div>
+                    </a>
+                    <div id="chicken-14-pieces-2-flavors-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#chickens" class="modal-close">&times;</a>
+                            <img src="prodImgs/14pcs.png" class="modal-image">
+
+                            <h3>Chicken: 14 Pieces (2 Flavors)</h3>
+                            <p class="modal-price">
+                                ₱459.00
+                            </p>
+
+                            <p class="modal-description">
+                                Fourteen crispy Korean-style chicken pieces, perfect for sharing. 
+                                Choose two different flavors.
+                            </p>
+
+                            <div class="flavor-selection" data-pick="2" data-name="flavor">
+                                <p class="modal-option-title">Select 2 Flavors</p>
+                                <div class="flavor-list">
+                                    <button type="button" class="flavor-option">Original</button>
+                                    <button type="button" class="flavor-option">Yangnyeom</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Extra Spicy</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Super Spicy</button>
+                                    <button type="button" class="flavor-option">Bulgogi</button>
+                                    <button type="button" class="flavor-option">Snow Cheese</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SALTED EGGS-->
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="salted-eggs-title" id="salted-egg">Salted Eggs</h3>
+                <hr>
+            </div>
+
+            <div class="salted-egg-container salted-eggs-left-offset">
+                <div class="salted-egg-image-box">
+                    <img src="prodImgs/sE.png" class="salted-egg-image">
+                </div>
+                <a href="#salted-egg-rice-meal-modal">
+                    <div class="salted-egg-item salted-egg-item-first">
+                        <p class="product-name">
+                            Salted Egg Rice Meal
+                        </p>
+                        <p class="product-price">
+                            ₱129.00
+                        </p>
+                    </div>
+                </a>
+
+                <div id="salted-egg-rice-meal-modal" class="modal">
+                    <div class="modal-content">
+                        <a href="#chickens" class="modal-close">&times;</a>
+                        <img src="prodImgs/sE.png" class="modal-image">
+
+                        <h3>Salted Egg: Rice Meal</h3>
+                        <p class="modal-price">
+                            ₱129.00
+                        </p>
+
+                        <p class="modal-description">
+                            Crispy Korean-style chicken coated in rich and creamy salted egg sauce, served with warm rice. 
+                            A savory and satisfying meal with a delicious balance of creamy, salty, and sweet flavors.
+                        </p>
+
+                        <div class="flavor-selection" data-pick="1" data-name="flavor">
+                                <p class="modal-option-title">Select Flavor</p>
+                                <div class="flavor-list">
+                                    <button type="button" class="flavor-option">Original</button>
+                                    <button type="button" class="flavor-option">Yangnyeom</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Extra Spicy</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Super Spicy</button>
+                                    <button type="button" class="flavor-option">Bulgogi</button>
+                                    <button type="button" class="flavor-option">Snow Cheese</button>
+                                </div>
+                            </div>
+
+                        <div class="modal-buttons">
+                            <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                            <button type="button" class="order-now-button modal-button">Order Now</button>
+                        </div>
+
+                        <h4 class="reviews-heading">Reviews and Feedback</h4>
+                        <div class="reviews-section">
+                            <div class="review-list">
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="#salted-egg-chicken-7-pieces-modal">
+                    <div class="salted-egg-item">
+
+                        <p class="product-name">
+                            Salted Egg 7 Pieces
+                        </p>
+                        <p class="product-price">
+                            ₱249.00
+                        </p>
+                    </div>
+                </a>
+
+                <div id="salted-egg-chicken-7-pieces-modal" class="modal">
+                    <div class="modal-content">
+
+                        <a href="#chickens" class="modal-close">&times;</a>
+
+                        <img src="prodImgs/sE.png" width="350px" class="modal-image">
+
+                        <h3>Salted Egg Chicken: 7 Pieces</h3>
+                        <p class="modal-price">
+                            ₱249.00
+                        </p>
+
+                        <p class="modal-description">
+                            Seven pieces of crispy Korean-style chicken coated in rich and creamy salted egg sauce. 
+                            Perfect for sharing.
+                        </p>
+
+                        <div class="flavor-selection" data-pick="1" data-name="flavor">
+                                <p class="modal-option-title">Select Flavor</p>
+                                <div class="flavor-list">
+                                    <button type="button" class="flavor-option">Original</button>
+                                    <button type="button" class="flavor-option">Yangnyeom</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Extra Spicy</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Super Spicy</button>
+                                    <button type="button" class="flavor-option">Bulgogi</button>
+                                    <button type="button" class="flavor-option">Snow Cheese</button>
+                                </div>
+                            </div>
+
+                        <div class="modal-buttons">
+                            <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                            <button type="button" class="order-now-button modal-button">Order Now</button>
+                        </div>
+
+                        <h4 class="reviews-heading">Reviews and Feedback</h4>
+                        <div class="reviews-section">
+                            <div class="review-list">
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="#salted-egg-chicken-14-pieces-modal">
+                    <div class="salted-egg-item">
+                        <p class="product-name">
+                            Salted Egg 14 Pieces
+                        </p>
+                        <p class="product-price">
+                            ₱469.00
+                        </p>
+                    </div>
+                </a>
+
+                <div id="salted-egg-chicken-14-pieces-modal" class="modal">
+                    <div class="modal-content">
+
+                        <a href="#chickens" class="modal-close">&times;</a>
+
+                        <img src="prodImgs/sE.png" class="modal-image">
+
+                        <h3>Salted Egg Chicken: 14 Pieces</h3>
+                        <p class="modal-price">
+                            ₱469.00
+                        </p>
+
+                        <p class="modal-description">
+                            Fourteen pieces of crispy Korean-style chicken coated in creamy salted egg sauce. 
+                            Made for sharing.
+                        </p>
+                        <div class="flavor-selection" data-pick="1" data-name="flavor">
+                                <p class="modal-option-title">Select Flavor</p>
+                                <div class="flavor-list">
+                                    <button type="button" class="flavor-option">Original</button>
+                                    <button type="button" class="flavor-option">Yangnyeom</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Extra Spicy</button>
+                                    <button type="button" class="flavor-option">Yangnyeom Super Spicy</button>
+                                    <button type="button" class="flavor-option">Bulgogi</button>
+                                    <button type="button" class="flavor-option">Snow Cheese</button>
+                                </div>
+                            </div>
+
+                        <div class="modal-buttons">
+                            <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                            <button type="button" class="order-now-button modal-button">Order Now</button>
+                        </div>
+
+                        <h4 class="reviews-heading">Reviews and Feedback</h4>
+                        <div class="reviews-section">
+                            <div class="review-list">
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        
+        <!--FOOD PANEL-->
+        <div id="foods" class="category-panel">
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="waffles-title" id="waffles">Waffles</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#classic-waffle-modal">
+                        <div class="product-card waffles-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/classWaff.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Classic
+                            </p>
+                            <p class="product-price">
+                                ₱89.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="classic-waffle-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+                            <img src="prodImgs/classWaff.png" class="modal-image">
+                            <h3>Classic Waffle</h3>
+                            <p class="modal-price">
+                                ₱89.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a warm and crispy waffle with a soft, fluffy center and lightly sweet flavor. 
+                                A simple classic treat that pairs perfectly with your favorite toppings and drinks.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#strawberry-waffle-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/strawberryWaff.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Strawberry
+                            </p>
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="strawberry-waffle-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+                            <img src="prodImgs/strawberryWaff.png" class="modal-image">
+                            <h3>Strawberry Waffle</h3>
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a warm and crispy waffle topped with sweet strawberry flavor and fruity goodness. 
+                                A simple and refreshing treat that pairs perfectly with its soft and fluffy center.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#blueberry-waffle-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/blueberryWaff.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Blueberry
+                            </p>
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="blueberry-waffle-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+                            <img src="prodImgs/blueberryWaff.png" class="modal-image">
+                            
+                            <h3>Blueberry Waffle</h3>
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a warm and crispy waffle paired with sweet blueberry flavor and fruity goodness. 
+                                A simple and refreshing treat that pairs perfectly with its soft and fluffy center.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#chocolate-chip-waffle-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/chocolateChip.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Chocolate Chip
+                            </p>
+                            <p class="product-price">
+                                ₱119.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="chocolate-chip-waffle-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/chocolateChip.png" class="modal-image">
+
+                            <h3>Chocolate Chip Waffle</h3>
+                            <p class="modal-price">
+                                ₱119.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a warm and crispy waffle filled with sweet chocolate chips and rich chocolate goodness. 
+                                A simple and indulgent treat that pairs perfectly with its soft and fluffy center.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#nutella-waffle-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/nutt.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Nutella
+                            </p>
+                            <p class="product-price">
+                                ₱129.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="nutella-waffle-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/nutt.png" class="modal-image">
+
+                            <h3>Nutella Waffle</h3>
+                            <p class="modal-price">
+                                ₱129.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a warm and crispy waffle topped with smooth Nutella and rich chocolate-hazelnut goodness. 
+                                A simple and indulgent treat that pairs perfectly with its soft and fluffy center.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="pasta-title" id="pasta">Pasta</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#spaghetti-modal">
+                        <div class="product-card pasta-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/spaghetti.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Spaghetti
+                            </p>
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="spaghetti-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/spaghetti.png" class="modal-image">
+
+                            <h3>Spaghetti</h3>
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a warm and comforting plate of spaghetti tossed in rich and flavorful sauce. 
+                                A simple and satisfying pasta dish that pairs perfectly with its tender noodles.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#chicken-aglio-olio-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/chickenAgli.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Chicken Aglio Olio
+                            </p>
+                            <p class="product-price">
+                                ₱169.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="chicken-aglio-olio-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/chickenAgli.png" class="modal-image">
+
+                            <h3>Chicken Aglio Olio</h3>
+                            <p class="modal-price">
+                                ₱169.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy tender chicken and spaghetti tossed with garlic and flavorful olive oil. 
+                                A simple and savory pasta dish that pairs perfectly with its light and satisfying garlicky taste.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#chicken-pesto-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/chickPesto.png">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Chicken Pesto
+                            </p>
+                            <p class="product-price">
+                                ₱169.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="chicken-pesto-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#foods" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/chickPesto.png" class="modal-image">
+
+                            <h3>Chicken Pesto</h3>
+                            <p class="modal-price">
+                                ₱169.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy tender chicken and spaghetti coated with creamy and flavorful pesto sauce. 
+                                A simple and savory pasta dish that pairs perfectly with its rich and satisfying herb-filled flavor.
+                            </p>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <!--DRINKS PANEL-->
+        <div id="drinks" class="category-panel">
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="coffee-title" id="coffee">Coffee</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#vanilla-coffee-modal">
+                        <div class="product-card coffee-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/coffVan.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Vanilla
+                            </p>
+                            <p class="product-price">
+                                ₱89.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="vanilla-coffee-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/coffVan.jpg" class="modal-image">
+
+                            <h3>Vanilla Coffee</h3>
+                            <p class="modal-price">
+                                ₱89.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy smooth coffee blended with sweet vanilla flavor for a creamy and comforting drink. 
+                                A simple and refreshing choice that pairs perfectly with its rich coffee taste.
+                            </p>
+
+                            <div class="size-selection coffee-size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#caramel-coffee-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/coffCara.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Caramel
+                            </p>
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="caramel-coffee-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/coffCara.jpg" class="modal-image">
+
+                            <h3>Caramel Coffee</h3>
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy smooth coffee blended with sweet caramel flavor for a creamy and comforting drink. 
+                                A simple and refreshing choice that pairs perfectly with its rich coffee taste.
+                            </p>
+
+                            <div class="size-selection coffee-size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#hazelnut-coffee-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/coffHz.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Hazelnut
+                            </p>
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="hazelnut-coffee-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/coffHz.jpg" class="modal-image">
+
+                            <h3>Hazelnut Coffee</h3>
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy smooth coffee blended with sweet hazelnut flavor for a creamy and comforting drink. 
+                                A simple and refreshing choice that pairs perfectly with its rich coffee taste.
+                            </p>
+
+                            <div class="size-selection coffee-size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#mocha-coffee-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/coffMocha.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Mocha
+                            </p>
+
+                            <p class="product-price">
+                                ₱119.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="mocha-coffee-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/coffMocha.jpg" class="modal-image">
+
+                            <h3>Mocha Coffee</h3>
+                            <p class="modal-price">
+                                ₱119.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy smooth coffee blended with rich chocolate flavor for a creamy and comforting drink. 
+                                A simple and indulgent choice that pairs perfectly with its rich coffee taste.
+                            </p>
+
+                            <div class="size-selection coffee-size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#white-chocolate-coffee-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/coffWC.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                White Chocolate
+                            </p>
+                            <p class="product-price">
+                                ₱129.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="white-chocolate-coffee-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/coffWC.jpg" class="modal-image">
+
+                            <h3>White Chocolate Coffee</h3>
+                            <p class="modal-price">
+                                ₱129.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy smooth coffee blended with sweet white chocolate flavor for a creamy and comforting drink. 
+                                A simple and indulgent choice that pairs perfectly with its rich coffee taste.
+                            </p>
+
+                            <div class="size-selection coffee-size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="non-coffee-title" id="non-coffee">Non-coffee</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#chocolate-modal">
+                        <div class="product-card non-coffee-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/nCChoc.jpg">
+                            </div>
+                            <p class="product-name">
+                                Chocolate
+                            </p>
+                            <p class="product-price">
+                                ₱79.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="chocolate-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/nCChoc.jpg" class="modal-image">
+
+                            <h3>Chocolate</h3>
+                            <p class="modal-price">
+                                ₱79.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy chocolate drink with a rich and comforting flavor. 
+                                A simple and refreshing choice that is perfect for satisfying your sweet chocolate cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#matcha-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/nCMatcha.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name" style="font-size: 15px;">
+                                Matcha
+                            </p>
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="matcha-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/nCMatcha.jpg" class="modal-image">
+
+                            <h3>Matcha</h3>
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy matcha drink with a rich and refreshing flavor. 
+                                A simple and comforting choice that is perfect for satisfying your sweet matcha cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#ube-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/nCUbe.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Ube
+                            </p>
+
+                            <p class="product-price">
+                                ₱149.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="ube-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/nCUbe.jpg" class="modal-image">
+
+                            <h3>Ube</h3>
+
+                            <p class="modal-price">
+                                ₱149.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy ube drink with a sweet and comforting flavor. 
+                                A simple and refreshing choice that is perfect for satisfying your sweet ube cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#oreo-cream-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/nCOreo.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Oreo Cream
+                            </p>
+
+                            <p class="product-price">
+                                ₱169.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="oreo-cream-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/nCOreo.jpg" class="modal-image">
+
+                            <h3>Oreo Cream</h3>
+
+                            <p class="modal-price">
+                                ₱169.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy drink blended with sweet Oreo flavor for a rich and comforting taste. 
+                                A simple and indulgent choice that is perfect for satisfying your sweet cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="refreshers-title" id="refreshers">Refreshers</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#strawberry-refresher-modal">
+                        <div class="product-card refreshers-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/refStrawberry.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Strawberry
+                            </p>
+
+                            <p class="product-price">
+                                ₱89.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="strawberry-refresher-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/refStrawberry.jpg" class="modal-image">
+
+                            <h3>Strawberry Refresher</h3>
+
+                            <p class="modal-price">
+                                ₱89.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a cool and refreshing drink with sweet strawberry flavor and fruity goodness. 
+                                A simple and refreshing choice that is perfect for a light and satisfying drink.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#mango-refresher-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/refMango.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Mango
+                            </p>
+
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="mango-refresher-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/refMango.jpg" class="modal-image">
+
+                            <h3>Mango Refresher</h3>
+
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a cool and refreshing drink with sweet mango flavor and fruity goodness. 
+                                A simple and refreshing choice that is perfect for a light and satisfying drink.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#peach-refresher-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/refPeach.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Peach
+                            </p>
+
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="peach-refresher-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/refPeach.jpg" class="modal-image">
+
+                            <h3>Peach Refresher</h3>
+
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a cool and refreshing drink with sweet peach flavor and fruity goodness. 
+                                A simple and refreshing choice that is perfect for a light and satisfying drink.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#lychee-refresher-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/refLychee.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Lychee
+                            </p>
+
+                            <p class="product-price">
+                                ₱119.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="lychee-refresher-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/refLychee.jpg" class="modal-image">
+
+                            <h3>Lychee Refresher</h3>
+
+                            <p class="modal-price">
+                                ₱119.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a cool and refreshing drink with sweet lychee flavor and fruity goodness. 
+                                A simple and refreshing choice that is perfect for a light and satisfying drink.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#passion-fruit-refresher-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/refPass.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Passion Fruit
+                            </p>
+
+                            <p class="product-price">
+                                ₱129.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="passion-fruit-refresher-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/refPass.jpg" class="modal-image">
+
+                            <h3>Passion Fruit Refresher</h3>
+
+                            <p class="modal-price">
+                                ₱129.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a cool and refreshing drink with sweet and tangy passion fruit flavor. 
+                                A simple and refreshing choice that is perfect for a light and satisfying drink.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subcategory-header">
+                <hr>
+                <h3 class="frappe-title" id="frappe">Frappe</h3>
+                <hr>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#chocolate-frappe-modal">
+                        <div class="product-card frappe-left-offset">
+                            <div class="product-image-box">
+                                <img src="prodImgs/frapChoco.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Chocolate
+                            </p>
+
+                            <p class="product-price">
+                                ₱89.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="chocolate-frappe-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/frapChoco.jpg" class="modal-image">
+
+                            <h3>Chocolate Frappe</h3>
+
+                            <p class="modal-price">
+                                ₱89.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy frappe blended with rich chocolate flavor for a cool and indulgent treat. 
+                                A simple and refreshing choice that is perfect for satisfying your sweet cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#caramel-frappe-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/frapCaramel.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Caramel
+                            </p>
+
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="caramel-frappe-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/frapCaramel.jpg" class="modal-image">
+
+                            <h3>Caramel Frappe</h3>
+
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy frappe blended with sweet caramel flavor for a cool and indulgent treat. 
+                                A simple and refreshing choice that is perfect for satisfying your sweet cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#matcha-frappe-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/frapMatcha.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Matcha
+                            </p>
+
+                            <p class="product-price">
+                                ₱99.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="matcha-frappe-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/frapMatcha.jpg" class="modal-image">
+
+                            <h3>Matcha Frappe</h3>
+
+                            <p class="modal-price">
+                                ₱99.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy frappe blended with rich matcha flavor for a cool and comforting treat. 
+                                A simple and refreshing choice that is perfect for satisfying your sweet cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#cookies-cream-frappe-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/frapCC.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Cookies & Cream
+                            </p>
+
+                            <p class="product-price">
+                                ₱119.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="cookies-cream-frappe-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/frapCC.jpg" class="modal-image">
+
+                            <h3>Cookies & Cream Frappe</h3>
+
+                            <p class="modal-price">
+                                ₱119.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy frappe blended with crunchy cookies and rich cream flavor for a cool and indulgent treat. 
+                                A simple and refreshing choice that is perfect for satisfying your sweet cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#java-chip-frappe-modal">
+                        <div class="product-card">
+                            <div class="product-image-box">
+                                <img src="prodImgs/frapJC.jpg">
+
+                                <div class="heart">
+                                    <img src="images/notLike.png" class="heart-icon">
+                                </div>
+                            </div>
+                            <p class="product-name">
+                                Java Chip
+                            </p>
+
+                            <p class="product-price">
+                                ₱129.00
+                            </p>
+                        </div>
+                    </a>
+
+                    <div id="java-chip-frappe-modal" class="modal">
+                        <div class="modal-content">
+                            <a href="#drinks" class="modal-close">&times;</a>
+
+                            <img src="prodImgs/frapJC.jpg" class="modal-image">
+
+                            <h3>Java Chip Frappe</h3>
+
+                            <p class="modal-price">
+                                ₱129.00
+                            </p>
+
+                            <p class="modal-description">
+                                Enjoy a smooth and creamy frappe blended with rich coffee and chocolate chips for a cool and indulgent treat. 
+                                A simple and refreshing choice that is perfect for satisfying your sweet cravings.
+                            </p>
+
+                            <div class="size-selection" data-pick="1" data-name="size">
+                                <p class="modal-option-title">Select Size</p>
+                                <div class="size-list">
+                                    <button type="button" class="size-option" data-extra="-10">S</button>
+                                    <button type="button" class="size-option selected" data-extra="0">M</button>
+                                    <button type="button" class="size-option" data-extra="10">L</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button type="button" class="add-to-cart-button modal-button">Add to Cart</button>
+                                <button type="button" class="order-now-button modal-button">Order Now</button>
+                            </div>
+
+                            <h4 class="reviews-heading">Reviews and Feedback</h4>
+                            <div class="reviews-section">
+                                <div class="review-list">
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Maria</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Very delicious!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">John</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★★</span></div>
+                                        <p class="review-text">Really tasty!</p>
+                                    </div>
+
+                                    <div class="review-card">
+                                        <div class="review-header"><span class="review-user"><span class="review-avatar"></span><b class="review-name">Angela</b></span><span class="review-date"></span></div>
+                                        <div class="review-details"><span class="review-stars">★★★★☆</span></div>
+                                        <p class="review-text">I enjoyed it!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="java-scripts/shared-data-and-cart.js"></script>
+        <script src="java-scripts/products-page.js"></script>
+    </body>
+</html>

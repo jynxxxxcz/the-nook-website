@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Your Cart</title>
+        <link rel="icon" type="image/png" href="images/theNook.png">
+        <link rel="stylesheet" type="text/css" href="css/cart-page-style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+
+    <body id="page-top">
+        <!-- HEADER -->
+        <div class="page-header">
+            <a href="home-page.html">
+                <img src="images/HomeWhite.png" class="home-icon">
+            </a>
+
+            <a href="#page-top">
+                <img src="images/NookWhite.png" class="nook-logo">
+            </a>
+
+            <a href="products-page.html#Snacks">
+                <div class="products-link">
+                    <img src="images/foodIconWhite.png" class="products-link-icon">
+                </div>
+            </a>
+        </div>
+
+        <!-- CART TABLE -->
+        <div class="cart-section">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th class="product-column-header">Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cart-body">
+                    <tr class="cart-item">
+                        <td class="product-cell">
+                            <div class="product-info">
+                                <img src="prodImgs/coffCara.jpg" alt="Caramel Coffee">
+                                <div class="product-text">
+                                    <span class="product-name">Caramel Coffee</span>
+                                    <span class="product-option-tag">M</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="product-price">₱90</td>
+                        <td class="quantity-cell"><input type="number" value="1" min="1"></td>
+                        <td class="item-total-price">₱90</td>
+                        <td class="remove-cell"><i class="ri-delete-bin-line"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CART TOTAL -->
+        <footer class="cart-total">
+            <h3>Cart Total</h3>
+            <p>Subtotal: <span class="subtotal">₱0</span></p>
+            <p>Delivery Fee: <span class="delivery-fee">₱0</span></p>
+            <p>Grand Total: <span class="grand-total">₱0</span></p>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <script src="java-scripts/shared-data-and-cart.js"></script>
+    </body>
+</html>

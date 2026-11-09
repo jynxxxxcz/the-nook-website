@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Nook</title>
+        <link rel="icon" type="image/png" href="images/theNook.png">
+        <link rel="stylesheet" type="text/css" href="css/home-page-style.css">
+        <link rel="transiton" href="../../assets/vendor/aos/dist/aos.css">
+    </head>
+
+    <body id="top">
+        <!-- HEADER -->
+        <div class="site-header">
+            <a href="#top">
+                <img src="images/NNook.png" class="site-logo">
+            </a>
+
+            <div class="burger-container">
+                <button type="button" class="burger-button" id="burger-button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                </button>
+
+                <nav id="nav-menu" class="dropdown-menu" aria-label="Main navigation">
+                    <a href="#top">Home</a>
+                    <a href="#products">Products</a>
+                    <div class="menu-divider"></div>
+                    <a href="#faqs">FAQs</a>
+                    <a href="#footer">Contact</a>
+                </nav>
+            </div>
+
+            <a href="account-page.html">
+                <div class="header-icon">
+                    <img src="images/profIcon.png" class="profile-icon">
+                </div>
+            </a>
+
+            <a href="cart-page.html">
+                <div class="header-icon">
+                    <img src="images/cart.png" class="cart-icon">
+                    <span class="cart-count"></span>
+                </div>
+            </a>
+
+            <a href="announcement-page.html">
+                <p class="announcements-link">
+                    Announcements
+                </p>
+            </a>
+        </div>
+
+        <!-- HERO SECTION -->
+        <div class="hero-collage">
+            <div id="hero-overlay">
+                <img src="images/NNookGrad.png" class="hero-logo">
+
+                <p class="hero-tagline">
+                    Eat. Hang Out. Study. Unwind
+                </p>
+
+                <p class="hero-subtagline">
+                    Fuel Your Day, Your Way
+                </p>
+
+                <a href="about-us-page.html">
+                    <div class="about-us-button">
+                        <p class="about-us-label">
+                            About us
+                        </p>
+
+                        <p class="about-us-arrow">
+                            🠲
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/exterior.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/drinksIcon.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/eatin.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/foodIco.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/waff.jpg" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/interior.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/coff.jpg" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/snacksIcon.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/exterior.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/orderin.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/chikIcon.png" class="collage-image">
+            </div>
+
+            <div class="collage-tile">
+                <img src="images/chik.jpg" class="collage-image">
+            </div>
+        </div>
+
+        <!-- OUR PRODUCTS -->
+        <div class="content-section" id="products">
+            <h1 class="section-heading">
+                Our Products
+                <hr width="50px" style="color:rgb(216, 175, 92)"/>
+            </h1>
+
+            <label for="search-bar"></label>
+            <input type="text" id="search-bar" name="search-bar" list="product-list" placeholder="Search for products..." autofocus>
+            <datalist id="product-list">
+                <option value="Sandwiches">
+                <option value="Appetizers">
+                <option value="Chicken">
+                <option value="Salted Egg">
+                <option value="Rice Meals">
+                <option value="Waffles">
+                <option value="Pasta">
+                <option value="Coffee">
+                <option value="Non-coffee">
+                <option value="Refreshers">
+                <option value="Frappe">
+            </datalist>
+
+            <div class="category-grid">
+                <div class="category-card">
+                    <a href="products-page.html#snacks">
+                        <img src="images/snacksIcon.png" class="category-image">
+                        <div class="category-name-box">
+                            <h1 class="category-name">Snacks</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="products-page.html#chickens">
+                        <img src="images/chikIcon.png" class="category-image">
+                        <div class="category-name-box">
+                            <h1 class="category-name">Chickens</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="products-page.html#foods">
+                        <img src="images/foodIco.png" class="category-image">
+                        <div class="category-name-box">
+                            <h1 class="category-name">Food</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="products-page.html#drinks">
+                        <img src="images/drinksIcon.png" class="category-image">
+                        <div class="category-name-box">
+                            <h1 class="category-name">Drinks</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOST LOVED PICKS -->
+        <div class="most-loved-section">
+            <h1 class="section-heading">
+                Most Loved Picks
+                <hr width="50px" style="color:rgb(216, 175, 92)"/>
+            </h1>
+
+            <div class="most-loved-carousel">
+                <div class="most-loved-slide">
+                    <img src="images/mLchickenY.png" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        KOREAN-STYLE CHICKEN: YANGNYEOM
+                        <br/>
+                        <span class="most-loved-category">
+                            3 Pieces with Rice
+                        </span>
+                    </p>
+                </div>
+
+                <div class="most-loved-slide">
+                    <img src="images/mLNachos.png" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        NACHOS
+                        <br/>
+                        <span class="most-loved-category">
+                            Snack |Appetizer
+                        </span>
+                    </p>
+                </div>
+
+                <div class="most-loved-slide">
+                    <img src="images/mLNutellaWaff.png" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        NUTELLA WAFFLE
+                    </p>
+                </div>
+
+                <div class="most-loved-slide">
+                    <img src="images/mLSpag.png" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        SPAGHETTI
+                        <br/>
+                        <span class="most-loved-category">
+                            Pasta
+                        </span>
+                    </p>
+                </div>
+
+                <div class="most-loved-slide">
+                    <img src="images/mLNC.jpg" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        OREO CREAM
+                        <br/>
+                        <span class="most-loved-category">
+                            Drink | Non-coffee | OVER-ICE
+                        </span>
+                    </p>
+                </div>
+
+                <div class="most-loved-slide">
+                    <img src="images/mLCoff.jpg" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        MOCHA
+                        <br/>
+                        <span class="most-loved-category">
+                            Drink | Coffee
+                        </span>
+                    </p>
+                </div>
+
+                <div class="most-loved-slide">
+                    <img src="images/mLFrap.jpg" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        MATCHA
+                        <br/>
+                        <span class="most-loved-category">
+                            Drink | Frappe
+                        </span>
+                    </p>
+                </div>
+
+                <div class="most-loved-slide">
+                    <img src="images/mLRefresher.jpg" class="most-loved-image">
+
+                    <p class="most-loved-caption">
+                        LYCHEE
+                        <br/>
+                        <span class="most-loved-category">
+                            Drink | Refresher
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQS -->
+        <div class="content-section" id="faqs">
+            <h1 class="section-heading">
+                Frequently Asked Questions
+                <hr width="50px" style="color:rgb(216, 175, 92)"/>
+            </h1>
+
+            <div class="faq-cards">
+                <div class="faq-card">
+                    <h2 class="faq-question">How to order?</h2>
+                    <hr class="faq-divider">
+                    <p class="faq-answer">
+                        Browse our menu and choose the food or drinks you’d like to order.
+                        Add your items to your cart, review your order, and proceed to checkout.
+                        Follow the instructions provided to complete your order.
+                    </p>
+                </div>
+
+                <div class="faq-card">
+                    <h2 class="faq-question">Operating Hours</h2>
+                    <hr class="faq-divider">
+                    <p class="faq-answer">
+                        The Nook is open Monday to Sunday, 10:00 AM–9:00 PM.
+                        Orders placed outside our operating hours will be processed once we reopen.
+                    </p>
+                </div>
+
+                <div class="faq-card">
+                    <h2 class="faq-question">Payment Methods</h2>
+                    <hr class="faq-divider">
+                    <p class="faq-answer">
+                        We accept cash, GCash, and other available online payment methods.
+                        Payment options will be shown during checkout.
+                    </p>
+                </div>
+
+                <div class="faq-card">
+                    <h2 class="faq-question">Contact Support</h2>
+                    <hr class="faq-divider">
+                    <p class="faq-answer">
+                        Need help with your order or have a question?
+                        You can contact The Nook Support Team through our Contact Us page or send us a message
+                        through our official social media accounts. Our team will be happy to assist you.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="site-footer" id="footer">
+            <div class="footer-banner">
+                <div class="footer-background">
+                    <img src="images/mainfeat.png">
+                </div>
+
+                <div id="footer-overlay">
+                    <img src="images/NNookGrad.png" class="footer-logo">
+
+                    <div class="footer-taglines">
+                        <p class="footer-tagline">
+                            Eat. Hang Out. Study. Unwind
+                        </p>
+
+                        <p class="footer-subtagline">
+                            Fuel Your Day, Your Way
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <p class="social-links-title">
+                            Follow us on:
+                        </p>
+
+                        <a href="https://www.facebook.com/mndzlynx/" target="_blank">
+                            <img src="images/fbIcon.png" class="social-icon" title="Go to Facebook">
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="images/igIcon.jpg" class="social-icon" title="Go to Instagram">
+                        </a>
+
+                        <a href="mailto: julie05annmendoza@gmail.com" target="_blank">
+                            <img src="images/mailIcon.jpg" class="social-icon" title="Go to Gmail">
+                        </a>
+
+                        <a href="https://www.linkedin.com/login/" target="_blank">
+                            <img src="images/inIcon.jpg" class="social-icon" title="Go to Linked In">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p style="text-align: center;">
+                    Copyright &copy; 2026 THE NOOK | All Rights Reserved | <span class="legal-link">Terms and Condition</span> | <span class="legal-link">Privacy Policy</span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="java-scripts/home-page.js"></script>
+        <script src="java-scripts/shared-data-and-cart.js"></script>
+    </body>
+</html>

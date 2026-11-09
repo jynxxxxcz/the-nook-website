@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Account</title>
+        <link rel="icon" type="image/png" href="images/theNook.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/account-page-style.css">
+    </head>
+
+    <body id="page-top">
+        <!-- HEADER -->
+        <div class="page-header">
+            <a href="home-page.html">
+                <img src="images/home.png" class="home-icon">
+            </a>
+
+            <img src="images/profIcon.png" class="profile-icon">
+            <div class="user-details">
+                <div class="username-row">
+                    <p class="username" id="username-text">Username1234</p>
+                    <span class="account-status-badge" id="account-status-badge" title="Click to change"></span>
+                </div>
+                <span class="login-hint" id="login-hint" hidden></span>
+
+                <div class="user-contact-info">
+                    <a href="https://maps.app.goo.gl/ZwQFkVCBekW1GPjD7" id="user-location-link" target="_blank">
+                        <img src="images/blackLoc.png" class="location-icon">
+                        <span class="user-info-text" id="user-location-text">Address</span>
+                    </a>
+
+                    <div class="contact-row">
+                        <img src="images/contactIcon.png" class="contact-icon">
+                        <span class="user-info-text" id="user-contact-text">Contact</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="announcement-page.html" class="announcements-link" aria-label="Announcements" title="Announcements">Announcements</a>
+
+            <div class="burger-menu-container">
+                <button type="button" class="burger-button" id="burger-button" aria-label="Open menu" aria-expanded="false" aria-controls="account-menu">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                </button>
+
+                <nav id="account-menu" class="dropdown-menu" aria-label="Account menu">
+                    <p class="menu-section-title">My Account</p>
+                    <a href="#editProfile" data-action="edit-profile">Edit Profile</a>
+                    <a href="#account-security-modal">Account &amp; Security</a>
+                    <a href="#my-addresses-modal">My Addresses</a>
+                    <div class="menu-divider"></div>
+                    <p class="menu-section-title">Settings</p>
+                    <a href="#notification-settings-modal">Notification Settings</a>
+                    <a href="#privacy-settings-modal">Privacy Settings</a>
+                    <div class="menu-divider"></div>
+                    <a href="#" id="logout-link" hidden>Log out</a>
+                </nav>
+            </div>
+        </div>
+        <!-- ORDER MENU -->
+        <div class="page-body">
+            <div class="order-menu">
+                <a href="#to-pay-modal">
+                    <div class="order-menu-item">
+                        <img src="images/toPay.png" class="order-menu-icon">
+                        <p class="order-menu-label">To Pay</p>
+                        <span class="order-count-badge" id="to-pay-count"></span>
+                        
+                    </div>
+                </a>
+
+                <div id="to-pay-modal" class="modal">
+                    <div class="modal-content">
+                        <a href="#page-top" class="modal-close-button">&times;</a>
+                        <h2 class="modal-title">To Pay</h2>
+                        <hr class="gold-divider"/>
+                        <div id="to-pay-list"></div>
+                    </div>
+                </div>
+
+                <a href="#to-ship-modal">
+                    <div class="order-menu-item">
+                        <img src="images/toShip.png" class="order-menu-icon">
+                        <p class="order-menu-label">To Ship</p>
+                        <span class="order-count-badge" id="to-ship-count"></span>
+                    </div>
+                </a>
+
+                <div id="to-ship-modal" class="modal">
+                    <div class="modal-content">
+                        <a href="#page-top" class="modal-close-button">&times;</a>
+                        <h2 class="modal-title">To Ship</h2>
+                        <hr class="gold-divider"/>
+                        <div id="to-ship-list"></div>
+                    </div>
+                </div>
+
+                <a href="#to-receive-modal">
+                    <div class="order-menu-item">
+                        <img src="images/toReceive.png" class="order-menu-icon">
+                        <p class="order-menu-label">To Receive</p>
+                        <span class="order-count-badge" id="to-receive-count"></span>
+                    </div>
+                </a>
+
+                <div id="to-receive-modal" class="modal">
+                    <div class="modal-content">
+                        <a href="#page-top" class="modal-close-button">&times;</a>
+                        <h2 class="modal-title">To Receive</h2>
+                        <hr class="gold-divider"/>
+                        <div id="to-receive-list"></div>
+                    </div>
+                </div>
+
+                <a href="#to-rate-modal">
+                    <div class="order-menu-item">
+                        <img src="images/toRate.png" class="order-menu-icon">
+                        <p class="order-menu-label">To Rate</p>
+                        <span class="order-count-badge" id="to-rate-count"></span>
+                    </div>
+                </a>
+
+                <div id="to-rate-modal" class="modal">
+                    <div class="modal-content">
+                        <a href="#page-top" class="modal-close-button">&times;</a>
+                        <h2 class="modal-title">To Rate</h2>
+                        <hr class="gold-divider"/>
+                        <div id="to-rate-list"></div>
+                    </div>
+                </div>
+
+                <a href="#history-modal">
+                    <div class="order-menu-item">
+                        <img src="images/viewHistory.png" class="order-menu-icon">
+                        <p class="order-menu-label">History</p>
+                        <span class="order-count-badge" id="history-count"></span>
+                    </div>
+                </a>
+
+                <div id="history-modal" class="modal">
+                    <div class="modal-content">
+                        <a href="#page-top" class="modal-close-button">&times;</a>
+                        <h2 class="modal-title">History</h2>
+                        <hr class="gold-divider"/>
+                        <div id="history-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAVORITES -->
+            <div class="favorites-section">
+                <h2 class="favorites-title">Favorites</h2>
+                <hr class="gold-divider"/>
+                <p class="empty-message" id="favorites-notice"></p>
+                <div id="favorites-list" hidden>
+                    <a href="products-page.html#myBtn3">
+                        <div class="favorite-card">
+                            <div class="favorite-card-image-box">
+                                <img src="prodImgs/hamNDcheese.png" class="favorite-card-image">
+
+                                <div class="favorite-heart">
+                                    <img src="images/like.png" class="favorite-heart-icon">
+                                </div>
+                            </div>
+                            <div class="favorite-card-details">
+                                <hr class="card-divider"/>
+                                <p class="favorite-card-name">Ham and Cheese</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <hr class="gold-divider"/>
+            </div>
+        </div>
+
+        <!-- ACCOUNT SETTINGS -->
+        <div id="account-security-modal" class="modal">
+            <div class="modal-content modal-small">
+                <a href="#page-top" class="modal-close-button">&times;</a>
+                <h2 class="modal-title">Account &amp; Security</h2>
+                <hr class="gold-divider"/>
+                <div id="account-security-info"></div>
+                <button type="button" class="account-button" onclick="document.getElementById('logout-link').click()">Log out</button>
+            </div>
+        </div>
+
+        <div id="my-addresses-modal" class="modal">
+            <div class="modal-content modal-small">
+                <a href="#page-top" class="modal-close-button">&times;</a>
+                <h2 class="modal-title">My Addresses</h2>
+                <hr class="gold-divider"/>
+                <div id="my-addresses-info"></div>
+            </div>
+        </div>
+
+        <div id="notification-settings-modal" class="modal">
+            <div class="modal-content modal-small">
+                <a href="#page-top" class="modal-close-button">&times;</a>
+                <h2 class="modal-title">Notification Settings</h2>
+                <hr class="gold-divider"/>
+                <label class="setting-row"><input type="checkbox" id="notifications-checkbox"> Notify me about my orders and announcements</label>
+                <p class="setting-note">Turn this on to get a message every time an order moves to the next step.</p>
+            </div>
+        </div>
+
+        <div id="privacy-settings-modal" class="modal">
+            <div class="modal-content modal-small">
+                <a href="#page-top" class="modal-close-button">&times;</a>
+                <h2 class="modal-title">Privacy Settings</h2>
+                <hr class="gold-divider"/>
+                <label class="setting-row"><input type="checkbox" id="private-account-checkbox"> Make my account private</label>
+                <p class="setting-note">A private account is shown as "Anonymous" in the product reviews.</p>
+            </div>
+        </div>
+        <!-- LOG IN / SIGN UP -->
+        <div id="login-modal" class="login-modal" hidden>
+            <div class="login-box" role="dialog" aria-modal="true" aria-label="Log in to The Nook">
+                <button type="button" class="login-close-button" id="login-close-button" aria-label="Close">&times;</button>
+
+                <div class="login-brand">
+                    <img src="images/nook-login-form.png" alt="The Nook" class="login-logo">
+                    <p class="login-tagline">Good Food. Cozy Vibes.</p>
+                </div>
+
+                <p class="login-error-message" id="login-error-message" role="alert" hidden></p>
+
+                <div class="login-screen" data-view="main">
+                    <h2 class="login-title">Welcome</h2>
+                    <p class="login-subtitle">Log in to your The Nook account</p>
+
+                    <button type="button" class="login-option-button" data-provider="Google">
+                        <span class="login-option-icon">
+                            <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.6 5.9c4.4-4.1 7-10.1 7-17.6z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.5-.8-3.1-.8-4.7s.3-3.2.8-4.7l-7.9-6.1C.9 16.4 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
+                        </span>
+                        <span class="login-option-text">Continue with Google</span>
+                    </button>
+
+                    <button type="button" class="login-option-button" data-provider="Facebook">
+                        <span class="login-option-icon">
+                            <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#1877F2"/><path fill="#fff" d="M33.3 30.9l1.100-6.900h-6.600v-4.500c0-1.900.9-3.700 3.900-3.700h3V9.900s-2.700-.5-5.300-.5c-5.400 0-8.900 3.300-8.900 9.200V24h-6v6.900h6V48h7.400V30.900z"/></svg>
+                        </span>
+                        <span class="login-option-text">Continue with Facebook</span>
+                    </button>
+
+                    <div class="login-or-divider"><span>or</span></div>
+
+                    <button type="button" class="login-option-button login-option-main" data-go="new">
+                        <span class="login-option-icon">
+                            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6.500 7-6.500s7 2.500 7 6.500"/><path d="M19 8v6M16 11h6"/></svg>
+                        </span>
+                        <span class="login-option-text">Create a New Account</span>
+                    </button>
+
+                    <button type="button" class="login-text-link" data-go="creds">Already have an account? Log in with username &amp; password</button>
+                </div>
+
+                <div class="login-screen" data-view="provider" hidden>
+                    <h2 class="login-title" id="social-login-title">Continue with Google</h2>
+                    <form id="social-login-form" class="login-form" novalidate>
+                        <label class="login-label" for="social-login-input" id="social-login-label">Gmail address</label>
+                        <input type="text" id="social-login-input" class="login-input" autocomplete="off">
+                        <button type="submit" class="login-submit-button">Continue</button>
+                        <button type="button" class="login-text-link" data-go="main">&larr; Back</button>
+                    </form>
+                </div>
+
+                <div class="login-screen" data-view="profile" hidden>
+                    <h2 class="login-title">Complete your profile</h2>
+                    <p class="login-subtitle" id="complete-profile-message"></p>
+                    <form id="complete-profile-form" class="login-form" novalidate>
+                        <label class="login-label" for="complete-profile-address">Location (complete address)</label>
+                        <textarea id="complete-profile-address" class="login-input" rows="3" placeholder="Enter full address here."></textarea>
+                        <label class="login-label" for="complete-profile-contact">Contact number</label>
+                        <input type="text" id="complete-profile-contact" class="login-input" maxlength="11" placeholder="e.g. 09123456789">
+                        <button type="submit" class="login-submit-button">Save &amp; Continue</button>
+                    </form>
+                </div>
+
+                <div class="login-screen" data-view="new" hidden>
+                    <h2 class="login-title">Create a New Account</h2>
+                    <form id="new-account-form" class="login-form" novalidate>
+                        <label class="login-label" for="new-account-username">Username</label>
+                        <input type="text" id="new-account-username" class="login-input" autocomplete="off">
+
+                        <label class="login-label" for="new-account-password">Password</label>
+                        <input type="password" id="new-account-password" class="login-input" autocomplete="new-password" placeholder="At least 6 characters">
+
+                        <label class="login-label" for="new-account-confirm-password">Confirm password</label>
+                        <input type="password" id="new-account-confirm-password" class="login-input" autocomplete="new-password" placeholder="Type the password again">
+                        <p class="password-match-hint" id="password-match-hint"></p>
+
+                        <label class="login-label" for="new-account-address">Location (complete address)</label>
+                        <textarea id="new-account-address" class="login-input" rows="3" placeholder="Enter full address here."></textarea>
+
+                        <label class="login-label" for="new-account-contact">Contact number</label>
+                        <input type="text" id="new-account-contact" class="login-input" maxlength="11" placeholder="e.g. 09123456789">
+
+                        <button type="submit" class="login-submit-button">Create Account</button>
+                        <button type="button" class="login-text-link" data-go="main">&larr; Back</button>
+                    </form>
+                </div>
+
+                <div class="login-screen" data-view="creds" hidden>
+                    <h2 class="login-title" id="credentials-title">Log In</h2>
+                    <p class="login-subtitle" id="credentials-note"></p>
+                    <form id="credentials-form" class="login-form" novalidate>
+                        <label class="login-label" for="credentials-username">Username</label>
+                        <input type="text" id="credentials-username" class="login-input" autocomplete="username" aria-describedby="credentials-username-error">
+                        <p class="login-field-error" id="credentials-username-error" role="alert" hidden></p>
+                        <label class="login-label" for="credentials-password">Password</label>
+                        <input type="password" id="credentials-password" class="login-input" autocomplete="current-password" aria-describedby="credentials-password-error">
+                        <p class="login-field-error" id="credentials-password-error" role="alert" hidden></p>
+                        <button type="submit" class="login-submit-button">Log In</button>
+                        <button type="button" class="login-text-link" data-go="main">&larr; Back</button>
+                    </form>
+                </div>
+
+                <p class="login-role-label">I am a...</p>
+                <div class="login-role-buttons">
+                    <button type="button" class="login-role-button" data-role="customer">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.500-6 8-6s8 2 8 6"/></svg>
+                        Customer
+                    </button>
+                    <button type="button" class="login-role-button" data-role="admin">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.500-3.200 8-8 9-4.800-1-8-4.500-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></svg>
+                        Admin
+                    </button>
+                    <button type="button" class="login-role-button" data-role="viewer">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.500-7 10-7 10 7 10 7-3.500 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Read Only
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDIT PROFILE -->
+        <div id="edit-profile-modal" class="login-modal" hidden>
+            <div class="login-box" role="dialog" aria-modal="true" aria-label="Edit profile">
+                <button type="button" class="login-close-button" id="edit-profile-close-button" aria-label="Close">&times;</button>
+
+                <h2 class="login-title">Edit Profile</h2>
+                <p class="login-error-message" id="edit-profile-error-message" role="alert" hidden></p>
+
+                <form id="edit-profile-form" class="login-form" novalidate>
+                    <label class="login-label" for="edit-profile-username">Username</label>
+                    <input type="text" id="edit-profile-username" class="login-input" autocomplete="off">
+
+                    <label class="login-label" for="edit-profile-address">Location (complete address)</label>
+                    <textarea id="edit-profile-address" class="login-input" rows="3" placeholder="Enter full address here."></textarea>
+
+                    <label class="login-label" for="edit-profile-contact">Contact number</label>
+                    <input type="text" id="edit-profile-contact" class="login-input" maxlength="11" placeholder="e.g. 09123456789">
+
+                    <button type="submit" class="login-submit-button">Save Changes</button>
+                    <button type="button" class="login-text-link" id="edit-profile-cancel-button">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="java-scripts/shared-data-and-cart.js"></script>
+        <script src="java-scripts/account-page.js"></script>
+    </body>
+</html>

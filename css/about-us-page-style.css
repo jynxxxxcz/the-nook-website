@@ -1,0 +1,468 @@
+/* GENERAL */
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-family: Century Gothic;
+    font-size: medium;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+/* HEADER */
+.page-header {
+    width: auto;
+    height: 50px;
+    background-color: rgb(61, 38, 19);
+    border: 1px solid rgb(216, 175, 92);
+    padding: 7px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.home-icon {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 25px;
+    transition: filter 0.2s ease;
+}
+
+.page-header a:hover .home-icon {
+    filter: brightness(0.7);
+}
+
+.nook-logo {
+    width: 115px;
+    height: 50px;
+    float: left;
+    display: inline;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.page-header a:hover .nook-logo {
+    filter: brightness(0.7);
+}
+
+
+/* HERO SECTION */
+.hero-collage {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    border: 1px solid rgb(216, 175, 92);
+    background-color: white;
+    padding-left: 8px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 2px;
+}
+
+#hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.903), rgba(80, 74, 74, 0.152));
+}
+
+.hero-logo {
+    width: clamp(120px, 24vw, 330px);
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-tagline {
+    font-family: Verdana;
+    font-size: medium;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 8px 0 4px;
+}
+
+.hero-subtagline {
+    font-family: Verdana;
+    font-size: medium;
+    margin-top: 0;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 4px 0;
+}
+
+.collage-tile {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid rgb(216, 175, 92);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.collage-tile img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 641px) and (max-width: 1099px) {
+    .hero-logo {
+        width: clamp(100px, 24vw, 260px);
+    }
+}
+
+@media (min-width: 1100px) {
+    .hero-logo {
+        width: clamp(280px, 24vw, 360px);
+    }
+
+    .hero-tagline,
+    .hero-subtagline {
+        font-size: 20px;
+    }
+}
+
+
+/* LOCATION */
+.location-bar {
+    width: auto;
+    height: 55px;
+    border: 1px solid rgb(216, 175, 92);
+    margin-top: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.903), rgba(80, 74, 74, 0.152));
+}
+
+.location-icon {
+    width: 25px;
+    height: 35px;
+    float: left;
+    display: inline;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 0px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.location-icon:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.3));
+}
+
+.location-address {
+    font-size: medium;
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: white;
+    float: left;
+    margin: 0;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+.location-address:hover {
+    font-size: 18px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: white;
+    text-decoration: 1px underline rgb(224, 164, 44);
+}
+
+
+/* OUR STORY AND FOOD QUALITY */
+.about-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(50% - 5px);
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 8px;
+}
+
+.about-section img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.about-section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: rgb(93, 55, 5);
+}
+
+/* FOOTER */
+.site-footer {
+    width: 100%;
+    background-color: rgb(9, 6, 1);
+    border: 1px solid rgb(216, 175, 92);
+    margin-top: 3px;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.footer-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0)
+    );
+}
+
+.footer-logo {
+    width: clamp(140px, 22%, 300px);
+    height: auto;
+    margin: 0;
+}
+
+.footer-taglines {
+    margin: 0;
+}
+
+.footer-tagline, .footer-subtagline {
+    font-size: clamp(11px, 2vw, 16px);
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    display: block;
+    margin: 5px 0 15px 10px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(8px, 2vw, 16px);
+    margin: 0;
+    margin-top: 4px;
+}
+
+.social-links-title {
+    color: white;
+    font-size: clamp(11px, 1.8vw, 15px);
+    margin: 0;
+    margin: 5px 0 5px 10px;
+}
+
+.social-links a {
+    position: relative;
+    box-sizing: border-box;
+    width: clamp(36px, 4vw, 44px);
+    height: clamp(36px, 4vw, 44px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    z-index: 1;
+    border-color: rgb(255, 223, 66);
+    background-color: rgba(216, 175, 92, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.social-icon {
+    width: clamp(26px, 4vw, 40px);
+    height: clamp(26px, 4vw, 40px);
+    display: inline-block;
+    margin: 0;
+}
+
+.copyright {
+    text-align: center;
+    padding: 14px 10px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: clamp(11px, 1.4vw, 14px);
+    color: rgb(216, 175, 92);
+}
+
+.legal-link {
+    color: gray;
+    text-decoration: underline gray;
+}
+
+.legal-link:hover {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 640px) {
+    .hero-collage {
+        width: 100%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2px;
+    }
+
+    .hero-collage .collage-tile {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        box-sizing: border-box;
+    }
+
+    .hero-collage .collage-tile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #hero-overlay {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+    }
+
+    .hero-logo {
+        width: 65%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-tagline,
+    .hero-subtagline {
+        font-size: clamp(9px, 3vw, 14px);
+        margin: 6px 10px 4px;
+    }
+
+    .about-sections {
+        clear: both;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-section {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .site-footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-banner {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .footer-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #footer-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo {
+        width: 160px;
+        height: auto;
+        margin: 0;
+        display: block;
+    }
+
+    .footer-taglines {
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+
+    .social-links {
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 15px;
+    }
+}

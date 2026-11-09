@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Nook - Announcements</title>
+        <link rel="icon" type="image/png" href="images/theNook.png">
+        <link rel="stylesheet" type="text/css" href="css/announcement-page-style.css">
+    </head>
+
+    <body id="page-top">
+        <!-- HEADER -->
+        <div class="page-header">
+            <a href="home-page.html" class="home-link">
+                <img src="images/HomeWhite.png"
+                    class="home-icon"
+                    alt="Home">
+            </a>
+
+            <a href="#page-top" class="logo-link">
+                <img src="images/NookWhite.png"
+                    class="nook-logo"
+                    alt="The Nook">
+            </a>
+
+            <p class="page-title">
+                Announcements
+            </p>
+        </div>
+
+        <!-- ANNOUNCEMENTS -->
+        <main class="announcements-section" id="announcement-list"></main>
+
+        <!-- ADD ANNOUNCEMENT BUTTON -->
+        <button type="button" class="add-announcement-button" id="add-announcement-button" title="Add announcement" aria-label="Add announcement" hidden>+</button>
+
+        <!-- ANNOUNCEMENT MODAL -->
+        <div class="announcement-modal" id="announcement-modal" hidden>
+            <div class="announcement-modal-box">
+                <button type="button" class="announcement-modal-close-button" id="announcement-modal-close-button" aria-label="Close">&times;</button>
+                <h2 id="announcement-modal-title">New Announcement</h2>
+                <hr class="announcement-modal-divider">
+
+                <p class="announcement-modal-label">Choose an icon</p>
+                <div class="icon-picker" id="icon-picker"></div>
+
+                <label class="announcement-modal-label" for="announcement-title-input">Title</label>
+                <input type="text" id="announcement-title-input" maxlength="40" list="title-suggestions" placeholder="e.g. Special Update">
+                <datalist id="title-suggestions">
+                    <option value="Special Update">
+                    <option value="Product Update">
+                    <option value="New Announcement">
+                    <option value="Promo">
+                    <option value="Important Notice">
+                </datalist>
+
+                <label class="announcement-modal-label" for="announcement-text-input">Announcement</label>
+                <textarea id="announcement-text-input" maxlength="300" placeholder="Type the announcement here..."></textarea>
+                <p class="announcement-character-count" id="announcement-character-count">0 / 300</p>
+
+                <div class="announcement-modal-actions">
+                    <button type="button" class="announcement-button cancel-announcement-button" id="announcement-cancel-button">Cancel</button>
+                    <button type="button" class="announcement-button" id="post-announcement-button">Post</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="java-scripts/shared-data-and-cart.js"></script>
+        <script src="java-scripts/announcements-page.js"></script>
+    </body>
+</html>

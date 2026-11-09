@@ -1,0 +1,445 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(249, 243, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Ensure hidden UI stays hidden even when other rules set display. */
+[hidden] {
+    display: none !important;
+}
+
+
+/* HEADER */
+.page-header {
+    box-sizing: content-box;
+    width: auto;
+    height: 50px;
+    background-color: rgb(61, 38, 19);
+    border: 1px solid rgb(216, 175, 92);
+    padding: 7px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.home-link {
+    float: left;
+    display: block;
+    height: 50px;
+}
+
+.home-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.home-link:hover .home-icon {
+    filter: brightness(0.7);
+}
+
+.logo-link {
+    float: left;
+    display: block;
+    height: 50px;
+}
+
+.nook-logo {
+    width: 115px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.logo-link:hover .nook-logo {
+    filter: brightness(0.7);
+}
+
+.page-title {
+    font-family: Impact;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.page-title:hover {
+    color: rgb(187, 142, 28);
+}
+
+@media (max-width: 640px) {
+    .page-header {
+        box-sizing: border-box;
+        width: 100%;
+        height: 45px;
+        padding: 5px;
+    }
+
+    .home-link {
+        height: 30px;
+    }
+
+    .home-icon {
+        width: 30px;
+        height: 30px;
+        margin: 2px 0 0 0;
+    }
+
+    .logo-link {
+        height: 30px;
+        margin-left: 18px;
+    }
+
+    .nook-logo {
+        width: 75px;
+        height: 30px;
+    }
+
+    .page-title {
+        font-size: 12px;
+        color: white;
+    }
+}
+
+
+/* ANNOUNCEMENTS */
+.announcements-section {
+    width: auto;
+    min-height: 500px;
+    height: fit-content;
+    margin-top: 3px;
+    padding: 23px;
+    background-color: rgba(249, 243, 233);
+}
+
+.no-announcements-message {
+    max-width: 850px;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: left;
+    color: #555;
+}
+
+.announcement-card {
+    width: 100%;
+    max-width: 850px;
+    min-height: 145px;
+    margin: 0 auto 18px auto;
+    padding: 18px 22px;
+    background-color: rgb(247, 234, 212);
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 10px;
+}
+
+.announcement-card-header {
+    width: 100%;
+    min-height: 55px;
+}
+
+.announcement-icon {
+    width: 44px;
+    height: 44px;
+    float: left;
+    margin: 0 18px 0 0;
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 10px;
+    background-color: rgba(249, 243, 233);
+    text-align: center;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.announcement-title-area {
+    float: left;
+    margin-top: 2px;
+}
+
+.announcement-title-area h2 {
+    margin: 0 0 8px 0;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(57, 34, 0);
+}
+
+.announcement-title-area p {
+    margin: 0;
+    font-family: Arial;
+    font-size: 12px;
+    color: #555;
+}
+
+.announcement-date-area {
+    width: 125px;
+    float: right;
+    text-align: right;
+}
+
+.announcement-date-area p {
+    margin: 2px 0;
+    font-family: Arial;
+    font-size: 11px;
+    color: #333;
+}
+
+.announcement-body {
+    margin-left: 62px;
+    padding-right: 125px;
+}
+
+.announcement-body h2 {
+    margin: 0 0 6px 0;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(57, 34, 0);
+}
+
+.announcement-body p {
+    margin: 0;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.announcement-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(61, 38, 19);
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.announcement-button:hover {
+    background-color: rgb(92, 66, 45);
+}
+
+.cancel-announcement-button {
+    background-color: #999;
+}
+
+.delete-announcement-button {
+    margin-top: 10px;
+    padding: 5px 14px;
+    background-color: orangered;
+    font-size: 12px;
+}
+
+.edit-announcement-button {
+    margin-right: 6px;
+    background-color: rgb(124, 95, 35);
+}
+
+@media (max-width: 640px) {
+    .announcements-section {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .announcement-card {
+        width: 100%;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .announcement-card-header {
+        min-height: 50px;
+    }
+
+    .announcement-icon {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+        line-height: 36px;
+        font-size: 17px;
+    }
+
+    .announcement-title-area h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .announcement-title-area p {
+        font-size: 11px;
+    }
+
+    .announcement-date-area {
+        width: auto;
+        max-width: 100px;
+    }
+
+    .announcement-date-area p {
+        font-size: 9px;
+    }
+
+    .announcement-body {
+        margin-left: 48px;
+        padding-right: 0;
+        margin-top: 10px;
+    }
+
+    .announcement-body h2 {
+        font-size: 13px;
+    }
+
+    .announcement-body p {
+        font-size: 11px;
+    }
+}
+
+
+/* ADD ANNOUNCEMENT BUTTON */
+.add-announcement-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(61, 38, 19);
+    color: white;
+    font-size: 34px;
+    line-height: 52px;
+    cursor: pointer;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.35);
+    z-index: 9000;
+}
+
+.add-announcement-button:hover {
+    background-color: rgb(92, 66, 45);
+}
+
+
+/* ANNOUNCEMENT MODAL */
+.announcement-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 10000;
+}
+
+.announcement-modal-box {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    padding: 20px 22px;
+    background-color: rgb(254, 254, 254);
+    border: 2px solid rgb(216, 175, 92);
+    border-radius: 10px;
+}
+
+.announcement-modal-close-button {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.announcement-modal-close-button:hover {
+    color: #000;
+}
+
+.announcement-modal-box h2 {
+    margin: 0;
+    font-family: Century Gothic;
+    font-size: 18px;
+    color: rgb(57, 34, 0);
+}
+
+.announcement-modal-divider {
+    height: 2px;
+    border: none;
+    background-color: rgb(216, 175, 92);
+    margin: 8px 0 12px;
+}
+
+.announcement-modal-label {
+    display: block;
+    margin: 10px 0 6px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(57, 34, 0);
+}
+
+.icon-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.icon-option {
+    width: 44px;
+    height: 44px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(247, 234, 212);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.icon-option:hover {
+    background-color: rgb(235, 216, 180);
+}
+
+.icon-option.selected {
+    border-color: rgb(61, 38, 19);
+    background-color: rgb(235, 216, 180);
+}
+
+#announcement-title-input,
+#announcement-text-input {
+    display: block;
+    width: 100%;
+    min-height: 110px;
+    padding: 8px;
+    font-family: Arial;
+    font-size: 13px;
+    resize: vertical;
+}
+
+.announcement-character-count {
+    margin: 2px 0 0;
+    text-align: right;
+    font-size: 11px;
+    color: #555;
+}
+
+.announcement-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 12px;
+}

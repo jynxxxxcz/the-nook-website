@@ -1,0 +1,417 @@
+/* BASE */
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Ensure hidden UI stays hidden even when other rules set display. */
+[hidden] {
+    display: none !important;
+}
+
+.order-form {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+    grid-template-areas:
+        "address details";
+    column-gap: 10px;
+    row-gap: 6px;
+}
+
+
+/* HEADER */
+.page-header {
+    width: auto;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(216, 175, 92);
+    padding: 7px;
+
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.home-icon {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.nook-logo {
+    width: 115px;
+    height: 50px;
+    float: left;
+    display: inline;
+    cursor: pointer;
+}
+
+
+/* FORM FIELDSETS */
+fieldset {
+    background-color: white;
+    border: 1px solid rgb(216, 175, 92);
+    margin: 5px 0;
+    padding: 12px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+@media (min-width: 701px) {
+    .order-form fieldset:first-child,
+    .section-title {
+        height: 568px;
+        min-height: 0;
+        box-sizing: border-box;
+    }
+
+    .section-title {
+        overflow: hidden;
+    }
+}
+
+
+/* DELIVERY ADDRESS */
+.order-form fieldset:first-child {
+    grid-area: address;
+    box-sizing: border-box;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.saved-addresses-list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    box-sizing: border-box;
+    padding-top: 12px;
+    overflow-y: auto;
+}
+
+.saved-addresses-list p {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Apply consistent sizing to the checkout address, contact, and section-title fields. */
+.order-form textarea[name="address-input"],
+.order-form input[placeholder^="Contact number"],
+.section-title input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.saved-address-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 8px;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.saved-address-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.saved-address-buttons .action-button {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 8px 10px;
+}
+
+.saved-address-card label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.saved-address-card label span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+
+/* ACTION BUTTONS */
+.action-button {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 4px 4px 4px 0;
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: rgb(247, 237, 218);
+}
+
+
+/* ORDER ITEMS */
+.section-title {
+    grid-area: details;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title .order-items-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.section-title .order-summary {
+    margin-top: auto;
+}
+
+.order-item-card {
+    margin-top: 5px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 1px solid rgb(216, 175, 92);
+    padding: 7px;
+
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.order-item-image {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(216, 175, 92);
+    border-radius: 5px;
+
+    position: static;
+    flex-shrink: 0;
+}
+
+.order-item-details {
+    position: static;
+    margin: 0;
+    flex: 1;
+}
+
+.order-item-details h3 {
+    margin: 0;
+}
+
+.order-item-details h4 {
+    margin: 80px 0;
+}
+
+.option-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.option-tag {
+    padding: 2px 10px;
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 4px;
+    background-color: rgb(247, 234, 212);
+    color: rgb(61, 38, 19);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.order-item-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 30px;
+    margin-top: 10px;
+}
+
+.order-item-numbers p {
+    margin: 0;
+}
+
+
+/* PAYMENT METHOD */
+.section-title fieldset {
+    min-width: 0;
+}
+
+.section-title fieldset label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.section-title fieldset div {
+    margin-top: 10px;
+}
+
+
+/* ORDER SUMMARY */
+.order-summary {
+    box-sizing: border-box;
+    width: auto;
+    margin: 5px 0 0 0;
+    padding: 8px 16px;
+    display: grid;
+    grid-template-columns: 1fr 190px;
+    column-gap: 16px;
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(61, 38, 19, 0.15);
+}
+
+.order-summary p {
+    grid-column: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 3px 2px;
+    font-size: 13px;
+    color: #555;
+}
+
+.order-summary p span {
+    color: #222;
+    font-weight: bold;
+}
+
+.order-summary p:not(:last-of-type) {
+    border-bottom: 1px dashed rgb(216, 200, 170);
+}
+
+.order-summary p:last-of-type {
+    margin-top: 4px;
+    padding: 5px 12px;
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 8px;
+    background-color: rgb(247, 234, 212);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(61, 38, 19);
+}
+
+.order-summary p:last-of-type span {
+    font-size: 18px;
+    color: rgb(61, 38, 19);
+}
+
+.place-order-button {
+    display: block;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid rgb(216, 175, 92);
+    border-radius: 8px;
+    background-color: rgb(61, 38, 19);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.place-order-button:hover {
+    background-color: rgb(92, 66, 45);
+}
+
+
+/* ORDER MESSAGES */
+.order-message-box {
+    margin-top: 30px;
+    padding: 30px 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(216, 175, 92);
+}
+
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .order-form {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "address"
+            "details";
+        column-gap: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-header {
+        height: 40px;
+    }
+
+    .home-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nook-logo {
+        width: 100px;
+        height: 40px;
+    }
+
+    .order-item-card {
+        height: 95px;
+    }
+
+    .order-item-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .order-item-numbers {
+        gap: 4px 15px;
+        font-size: 14px;
+    }
+
+    .order-summary {
+        display: block;
+        width: auto;
+        margin: 5px 0 0 0;
+        padding: 8px 12px;
+    }
+
+    .order-summary p:last-of-type span {
+        font-size: 17px;
+    }
+
+    .place-order-button {
+        display: block;
+        width: 100%;
+        margin-top: 6px;
+        padding: 10px;
+    }
+}

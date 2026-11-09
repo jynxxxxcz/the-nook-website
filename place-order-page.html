@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Place Order</title>
+        <link rel="icon" type="image/png" href="images/theNook.png">
+        <link rel="stylesheet" type="text/css" href="css/place-order-page-style.css">
+    </head>
+
+    <body id="page-top">
+        <!-- HEADER -->
+        <div class="page-header">
+            <a href="home-page.html">
+                <img src="images/home.png" class="home-icon">
+            </a>
+
+            <a href="#page-top">
+                <img src="images/NNook.png" class="nook-logo">
+            </a>
+        </div>
+
+        <div id="order-form" class="order-form">
+
+            <!-- DELIVERY ADDRESS -->
+            <fieldset id="delivery-address-section">
+                <legend>Delivery Address</legend>
+
+                <textarea name="address-input" id="address-input" rows="4" placeholder="Enter full address here."></textarea>
+                <input type="text" id="contact-number-input" maxlength="11" placeholder="Contact number (e.g. 09123456789)">
+
+                <span class="saved-address-buttons">
+                    <button type="button" id="save-address-button" class="action-button">Save Address</button>
+                    <button type="button" id="add-new-address-button" class="action-button">Add New Address</button>
+                </span>
+
+                <div id="saved-addresses-list" class="saved-addresses-list"></div>
+            </fieldset>
+
+            <!-- ORDER ITEMS -->
+            <fieldset class="section-title">
+                <legend>Your Order</legend>
+                <div id="order-items-list" class="order-items-list"></div>
+
+                <!-- PAYMENT METHOD -->
+                <fieldset id="payment-method-section">
+                    <legend>Mode of Payment</legend>
+
+                    <label><input type="radio" name="payment" value="Cash on Delivery"> Cash on Delivery</label>
+                    <label><input type="radio" name="payment" value="GCash"> GCash</label>
+                    <label><input type="radio" name="payment" value="PayPal"> PayPal</label>
+
+                    <div id="payment-details" hidden>
+                        <label for="payment-account-name">Account Name</label>
+                        <input type="text" id="payment-account-name" placeholder="Enter account name">
+
+                        <label for="payment-account-number" id="payment-account-number-label">Account Number</label>
+                        <input type="text" id="payment-account-number" maxlength="11" placeholder="e.g. 09123456789">
+                    </div>
+                </fieldset>
+
+                <!-- ORDER SUMMARY -->
+                <div class="order-summary">
+                    <p>Subtotal: <span class="subtotal">₱0</span></p>
+                    <p>Delivery Fee: <span class="delivery-fee">Free</span></p>
+                    <p>Grand Total: <span class="grand-total">₱0</span></p>
+                    <button type="button" id="place-order-button" class="action-button place-order-button">Place Order</button>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- ORDER PLACED -->
+        <div id="order-done-screen" class="order-message-box" hidden>
+            <h2>Order Placed!</h2>
+            <p>Thank you for ordering at The Nook.</p>
+            <p id="order-done-details"></p>
+
+            <a href="home-page.html" class="action-button">Back to Home</a>
+            <a href="account-page.html#to-pay-modal" id="view-orders-link" class="action-button">View My Orders</a>
+            <a href="products.html" class="action-button">Back to Products</a>
+        </div>
+
+        <!-- LOGIN NEEDED -->
+        <div id="login-needed-screen" class="order-message-box" hidden>
+            <h2>Please log in first</h2>
+            <p id="login-needed-message"></p>
+            <a href="account-page.html" class="action-button">Go to Account</a>
+            <a href="products-page.html" class="action-button">Back to Products</a>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="java-scripts/shared-data-and-cart.js"></script>
+        <script src="java-scripts/place-order.js"></script>
+    </body>
+</html>
