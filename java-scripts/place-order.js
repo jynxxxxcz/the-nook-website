@@ -71,7 +71,7 @@ function showOrderItems() {
     const itemsBox = document.getElementById("order-items-list");
 
     if (cart.length === 0) {
-        itemsBox.innerHTML = `<p>No items to order. <a href="products.html">Browse products</a></p>`;
+        itemsBox.innerHTML = `<p>No items to order. <a href="products-page.html#snacks">Browse products</a></p>`;
     } else {
         itemsBox.innerHTML = cart.map(orderItemCard).join("");
     }
