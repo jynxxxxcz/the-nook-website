@@ -6,6 +6,22 @@
 
     const mobileQuery = window.matchMedia("(max-width: 640px)");
 
+    const fitProductNames = () => {
+        document.querySelectorAll(".product-list .product-name, .salted-egg-item .product-name").forEach(name => {
+            name.style.removeProperty("font-size");
+
+            if (!mobileQuery.matches) {
+                return;
+            }
+
+            let fontSize = parseFloat(window.getComputedStyle(name).fontSize);
+            while (name.scrollWidth > name.clientWidth && fontSize > 7) {
+                fontSize = Math.max(7, fontSize - 0.5);
+                name.style.fontSize = `${fontSize}px`;
+            }
+        });
+    };
+
     // Keep the list's expanded class, button label, and accessibility state consistent.
     const setExpanded = (box, button, open) => {
         if (open) {
@@ -17,6 +33,7 @@
             button.setAttribute("aria-expanded", "false");
             button.textContent = LABEL_OPEN;
         }
+        fitProductNames();
     };
 
     const revealHashTarget = () => {
@@ -101,6 +118,7 @@
         } else {
             disableMobile();
         }
+        fitProductNames();
     };
 
     const init = () => {
@@ -112,7 +130,11 @@
             mobileQuery.addListener(sync);
         }
 
-        window.addEventListener("hashchange", revealHashTarget);
+        window.addEventListener("hashchange", () => {
+            revealHashTarget();
+            window.requestAnimationFrame(fitProductNames);
+        });
+        window.addEventListener("resize", fitProductNames);
     };
 
     if (document.readyState === "loading") {
@@ -533,7 +555,7 @@
 // FAVORITES AND RATINGS: sync product hearts and review scores.
 {
     const LIKED_IMG = "images/like.png";
-    const NOT_LIKED_IMG = "images/notLike.png";
+    const NOT_LIKED_IMG = "images/notLIke.png";
 
     // Find or create a product's favorite button.
     const getHeart = box => {
